@@ -2,7 +2,6 @@ document.getElementById('button1').addEventListener('click', getText);
 document.getElementById('button2').addEventListener('click', getJSON);
 document.getElementById('button3').addEventListener('click', getExternal);
 
-
 //Get Local Text file data
 function getText() {
     fetch('test.txt')
@@ -13,10 +12,11 @@ function getText() {
         })
         .then(err =>console.log(err));
 }
+
 //Get local JSON data
 function getJSON() {
     fetch('post.json')
-        .then(res =>res.json())
+        .then(res => res.json())
         .then(data => {
             console.log(data);
             let output = '';
@@ -28,9 +28,9 @@ function getJSON() {
         .catch(err => console.log(err));
 }
 
-// //Get External API
+//Get External API
 function getExternal() {
-    fetch('https://api.github.com/users')
+        fetch('https://api.github.com/users')
         .then(res => res.json())
         .then(data => {
             console.log(data);
