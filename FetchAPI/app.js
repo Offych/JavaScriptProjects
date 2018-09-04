@@ -6,17 +6,17 @@ document.getElementById('button3').addEventListener('click', getExternal);
 //Get Local Text file data
 function getText() {
     fetch('test.txt')
-        .then(res => res.text())
+        .then(res => res.text()) 
         .then(data => {
             console.log(data);
             document.getElementById('output').innerHTML = data;
         })
-        .then(err => console.log(err));
+        .then(err =>console.log(err));
 }
 //Get local JSON data
 function getJSON() {
     fetch('post.json')
-        .then(res => res.json())
+        .then(res =>res.json())
         .then(data => {
             console.log(data);
             let output = '';
