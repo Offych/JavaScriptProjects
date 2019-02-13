@@ -3,4 +3,4 @@ Welcome :-)
 
 Add a simple FetchAPI Project
 
-Add a new Project - Microposts CRUD app
+Add a new Project - Microposts JavaScript CRUD app example
